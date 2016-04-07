@@ -1,0 +1,10 @@
+<div class="btn btn-lg btn-primary" ng-click="addList()">Add a new list</div>
+<div class="clearfix"></div>
+
+<div class="list-container" ng-repeat="list in lists">
+
+	<p>{{ list.name }}</p>
+
+    <div class="btn btn-primary" ng-click="addCard()">Add a card</div>
+
+</div>
