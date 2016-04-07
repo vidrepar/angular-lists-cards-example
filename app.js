@@ -8,7 +8,6 @@ angular.module('listscards').config(function($stateProvider, $urlRouterProvider)
         controller: 'ListCtrl'
     });
     $stateProvider.state('card', {
-        url: 'lists', /*???*/
         templateUrl: 'partial/card/card.html',
         controller: 'CardCtrl'
     });

@@ -20,9 +20,12 @@ angular.module('listscards').factory('cardsService',function() {
             item:null
         },
 
-        addCard: function(){
+        addCards: function(){
 
-            console.log('card added');
+            service.model.list.push({
+                id : service.model.list.length+1,
+                name: 'Card ' + service.model.list.length+1
+            })
 
         }
 

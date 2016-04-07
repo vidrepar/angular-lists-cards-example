@@ -5,6 +5,8 @@
 
 	<p>{{ list.name }}</p>
 
-    <div class="btn btn-primary" ng-click="addCard()">Add a card</div>
+    <div ng-controller="CardCtrl">
+        <div ng-include="'partial/card/card.html'"></div>
+    </div>
 
 </div>

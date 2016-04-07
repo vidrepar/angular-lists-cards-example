@@ -1,9 +1,11 @@
-angular.module('listscards').controller('CardCtrl',function($scope){
+angular.module('listscards').controller('CardCtrl',function($scope, cardsService){
+
+    $scope.cards = cardsService.model.list;
 
     $scope.addCard = function(){
 
-        console.log('add a card');
+        cardsService.addCards();
 
-    }
+    };
 
 });
