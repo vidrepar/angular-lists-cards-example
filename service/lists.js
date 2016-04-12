@@ -11,7 +11,7 @@ angular.module('listscards').factory('listsService',function() {
 
         addList: function(){
 
-            i = service.model.list.length;
+            var i = service.model.list.length;
 
             service.model.list.push({
                 id:i,

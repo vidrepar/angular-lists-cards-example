@@ -12,7 +12,7 @@ angular.module('listscards').controller('ListCtrl',function($scope, listsService
 
         angular.forEach(listsService.model.list, function(list, index){
 
-            i = list.cards.length;
+            var i = list.cards.length;
 
             //testing for pressed list in list array
             if(targetedList.id === index){

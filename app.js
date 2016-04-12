@@ -7,10 +7,7 @@ angular.module('listscards').config(function($stateProvider, $urlRouterProvider)
         templateUrl: 'partial/list/list.html',
         controller: 'ListCtrl'
     });
-    $stateProvider.state('card', {
-        templateUrl: 'partial/card/card.html',
-        controller: 'CardCtrl'
-    });
+
     /* Add New States Above */
     $urlRouterProvider.otherwise('/lists');
 
